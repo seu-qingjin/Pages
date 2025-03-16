@@ -56,7 +56,7 @@
 
         .datetime {
             position: absolute; /* 改为绝对定位，相对于图片 */
-            top: 42%; /* 调整为你希望锚定的垂直位置 */
+            top: 41%; /* 调整为你希望锚定的垂直位置 */
             left: 50%; /* 调整为你希望锚定的水平位置 */
             transform: translateX(-50%); /* 水平居中 */
             color: darkgreen; /* 深绿色文字 */
@@ -138,7 +138,7 @@
 
             container.addEventListener('scroll', () => {
                 const scrollTop = container.scrollTop; // 获取滚动距离
-                datetime.style.top = `${42 - scrollTop * 0.00075}%`; // 调整系数为 0.00075
+                datetime.style.top = `${41 - scrollTop * 0.00075}%`; // 调整系数为 0.00075
             });
         }
     </script>

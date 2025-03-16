@@ -56,21 +56,20 @@
 
         .datetime {
             position: absolute; /* 改为绝对定位，相对于图片 */
-            top: 41%; /* 调整为你希望锚定的垂直位置 */
+            top: 39%; /* 调整为你希望锚定的垂直位置 */
             left: 50%; /* 调整为你希望锚定的水平位置 */
             transform: translateX(-50%); /* 水平居中 */
             color: darkgreen; /* 深绿色文字 */
-            font-size: 20px; /* 默认字号 */
+            font-size: 18px; /* 默认字号 */
             z-index: 1000;
             background-color: transparent; /* 去掉背景色 */
-            font-weight: bold; /* 加粗字体 */
             white-space: nowrap; /* 禁止换行 */
         }
 
         /* 针对小屏幕调整字体大小 */
         @media (max-width: 600px) {
             .datetime {
-                font-size: 20px; /* 在小屏幕上缩小字号 */
+                font-size: 18px; /* 在小屏幕上缩小字号 */
             }
         }
     </style>
@@ -138,7 +137,7 @@
 
             container.addEventListener('scroll', () => {
                 const scrollTop = container.scrollTop; // 获取滚动距离
-                datetime.style.top = `${41 - scrollTop * 0.00075}%`; // 调整系数为 0.00075
+                datetime.style.top = `${39 - scrollTop * 0.00075}%`; // 调整系数为 0.00075
             });
         }
     </script>
